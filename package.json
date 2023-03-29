@@ -2,6 +2,7 @@
     "name": "async-tick",
     "version": "1.0.0",
     "description": "async-tick",
+    "type": "module",
     "main": "dist/async-tick.js",
     "module": "dist/async-tick.esm.js",
     "exports": {

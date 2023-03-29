@@ -1,4 +1,3 @@
-
 import Microtask from './microtask.js';
 
 export const debounce = function(callback, delay = 100) {

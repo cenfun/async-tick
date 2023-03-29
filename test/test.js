@@ -1,16 +1,4 @@
-# async-tick
-
-## Preview
-
-
-## Install
-```
-npm i async-tick
-```
-## API
-- microtask
-```js
-import { microtask } from "async-tick";
+import { microtask } from '../src/index.js';
 
 const microtaskCallbackSync = (arg) => {
     console.log(arg);
@@ -22,9 +10,3 @@ console.log('microtaskCallback1');
 microtaskCallback(1);
 console.log('microtaskCallback2');
 microtaskCallback(2);
-
-```
-
-
-- throttle
-- debounce
