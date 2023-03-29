@@ -1,0 +1,35 @@
+{
+    "name": "async-tick",
+    "version": "1.0.0",
+    "description": "async-tick",
+    "main": "dist/async-tick.js",
+    "module": "dist/async-tick.esm.js",
+    "exports": {
+        ".": {
+            "import": "./src/index.js",
+            "require": "./dist/async-tick.js"
+        }
+    },
+    "scripts": {
+        "dev": "sf d",
+        "build": "sf b -p",
+        "test": "node test/test.js",
+        "patch": "npm run build && sf publish patch",
+        "pack": "sf pack -o docs"
+    },
+    "files": [
+        "dist",
+        "src"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cenfun/async-tick.git"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "eslint": "^8.37.0",
+        "eslint-config-plus": "^1.0.6",
+        "eslint-plugin-html": "^7.1.0"
+    }
+}
