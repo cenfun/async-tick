@@ -23,6 +23,10 @@ microtaskCallback(1);
 console.log('microtaskCallback2');
 microtaskCallback(2);
 
+// microtaskCallback1
+// microtaskCallback2
+// 2
+
 ```
 
 
