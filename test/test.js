@@ -1,12 +1,15 @@
 import { microtask } from '../src/index.js';
 
-const microtaskCallbackSync = (arg) => {
+const microtaskCallback = microtask((arg) => {
     console.log(arg);
-};
+});
 
-const microtaskCallback = microtask(microtaskCallbackSync);
 
-console.log('microtaskCallback1');
 microtaskCallback(1);
-console.log('microtaskCallback2');
+microtaskCallback.cancel();
+// will not output 1
+
+
+microtaskCallback(1);
 microtaskCallback(2);
+// will only output 2
