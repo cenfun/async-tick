@@ -28,8 +28,8 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "eslint": "^8.37.0",
-        "eslint-config-plus": "^1.0.6",
-        "eslint-plugin-html": "^7.1.0"
-    }
+        "eslint": "^10.0.2",
+        "eslint-config-plus": "^2.0.3"
+    },
+    "module": "dist/async-tick.esm.js"
 }
