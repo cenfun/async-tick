@@ -25,7 +25,10 @@ export default class Microtask {
             return;
         }
 
-        throw new Error('Current browser does NOT support queueMicrotask or Promise');
+        setTimeout(() => {
+            console.warn('queueMicrotask and Promise are not supported, fallback to setTimeout');
+            this.execute();
+        }, 0);
     }
 
     execute() {

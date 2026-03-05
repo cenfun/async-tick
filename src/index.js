@@ -11,6 +11,7 @@ export const debounce = function(callback, delay = 100) {
     handler.cancel = () => {
         clearTimeout(timeout);
     };
+    handler.callback = callback;
     return handler;
 };
 
@@ -38,6 +39,7 @@ export const throttle = function(callback, delay = 100) {
         clearTimeout(timeout);
         last = 0;
     };
+    handler.callback = callback;
     return handler;
 };
 
@@ -52,5 +54,6 @@ export const microtask = function(callback) {
     handler.cancel = () => {
         mt.cancel();
     };
+    handler.callback = callback;
     return handler;
 };

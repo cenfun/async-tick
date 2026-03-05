@@ -1,9 +1,10 @@
 {
     "name": "async-tick",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "async-tick",
     "type": "module",
     "main": "dist/async-tick.js",
+    "module": "dist/async-tick.esm.js",
     "exports": {
         ".": {
             "require": "./dist/async-tick.js",
@@ -29,7 +30,6 @@
     "dependencies": {},
     "devDependencies": {
         "eslint": "^10.0.2",
-        "eslint-config-plus": "^2.0.3"
-    },
-    "module": "dist/async-tick.esm.js"
+        "eslint-config-plus": "^2.0.4"
+    }
 }

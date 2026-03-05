@@ -4,12 +4,13 @@ const microtaskCallback = microtask((arg) => {
     console.log(arg);
 });
 
+console.log('use callback directly', microtaskCallback.callback);
 
 microtaskCallback(1);
 microtaskCallback.cancel();
-// will not output 1
+console.log('task 1 canceled, will not output 1');
 
 
 microtaskCallback(1);
 microtaskCallback(2);
-// will only output 2
+console.log('two tasks 1 and 2, will only output 2');
